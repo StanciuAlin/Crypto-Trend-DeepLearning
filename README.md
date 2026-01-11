@@ -33,6 +33,12 @@ market hysteria against technical trends.
 ## Performance Summary
 The models were evaluated during a 2025-2026 test period, demonstrating significant predictive power:
 
+| Model             | RMSE (USD) | R² Score | Trend Acc (%) | ROI (Backtest) |
+|-------------------|------------|-----------|----------------|----------------|
+| Baseline LSTM     | 3491.70    | 0.9077    | 48.44%         | 0.24%          |
+| Hybrid CNN-LSTM   | 4111.74    | 0.8720    | 48.70%         | 19.97%         |
+| Sentiment Fusion  | 3441.84    | 0.9103    | 45.31%         | 13.68%         |
+
 Note: While the Sentiment Fusion model achieved the highest statistical precision (lowest RMSE), 
 the **Hybrid CNN-LSTM** generated the highest financial Alpha, outperforming the **Buy & Hold** 
 benchmark (ROI: -12.53%) by a significant margin.
